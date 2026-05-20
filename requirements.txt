@@ -1,0 +1,12 @@
+# AURA DRIVE — Requirements
+# Install: pip install -r requirements.txt
+# For Google Colab: run Cell 1 in the notebook
+
+opencv-python-headless>=4.8.0
+dlib>=19.24.0
+imutils>=0.5.4
+scipy>=1.10.0
+numpy>=1.24.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+ipython>=8.0.0
