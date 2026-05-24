@@ -1,4 +1,4 @@
-# 🚗 AURA DRIVE
+#  AURA DRIVE
 ## AI-Powered Adaptive Driver Intelligence & Safety System
 
 [![GitHub](https://img.shields.io/badge/GitHub-vishal%2Faura--drive-181717?logo=github)](https://github.com/vishal/aura-drive)
@@ -12,13 +12,13 @@
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 AURA DRIVE is a real-time AI-powered driver monitoring and safety system built using computer vision and facial landmark analysis. It continuously monitors the driver through a webcam and detects dangerous conditions such as fatigue, drowsiness, distraction, and emotional stress — then generates intelligent adaptive safety responses.
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 
 - Detect driver **fatigue** and **drowsiness** in real time
 - Monitor **driver attention** and head direction
@@ -28,7 +28,7 @@ AURA DRIVE is a real-time AI-powered driver monitoring and safety system built u
 
 ---
 
-## 🧠 Core Features
+##  Core Features
 
 | Feature | Description |
 |---------|-------------|
@@ -44,7 +44,7 @@ AURA DRIVE is a real-time AI-powered driver monitoring and safety system built u
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Tool | Purpose |
 |------|---------|
@@ -60,7 +60,7 @@ AURA DRIVE is a real-time AI-powered driver monitoring and safety system built u
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 AURA_DRIVE/
@@ -92,7 +92,7 @@ AURA_DRIVE/
 
 ---
 
-## 🚀 How to Run (Google Colab)
+##  How to Run (Google Colab)
 
 **Step 1** — Open [Google Colab](https://colab.research.google.com)
 
@@ -111,7 +111,7 @@ AURA_DRIVE/
 | Cell 7 | Generate analytics dashboard |
 | Cell 8 | Full Phase 4 session (15 frames) |
 
-> ⚠️ When prompted, click **Allow** to give the browser camera access.
+>  When prompted, click **Allow** to give the browser camera access.
 
 ---
 
@@ -148,7 +148,7 @@ Risk = (100 - Attention) × 0.4 + Fatigue × 0.4
 
 ---
 
-## 📈 Dashboard Output
+##  Dashboard Output
 
 The analytics dashboard (Cell 7) generates a 6-chart PNG:
 
@@ -161,7 +161,7 @@ The analytics dashboard (Cell 7) generates a 6-chart PNG:
 
 ---
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 - [ ] Voice alerts using gTTS
 - [ ] GPS integration for location-based risk
@@ -173,7 +173,7 @@ The analytics dashboard (Cell 7) generates a 6-chart PNG:
 
 ---
 
-## 👨‍💻 Development Timeline
+## Development Timeline
 
 | Day | Work Done |
 |-----|-----------|
@@ -193,4 +193,4 @@ MIT License — free to use, modify, and distribute.
 
 ---
 
-*Built with ❤️ using Python, OpenCV, and dlib*
+*Built with  using Python, OpenCV, and dlib*
