@@ -9,9 +9,8 @@ try:
     COLAB = True
 except ImportError:
     COLAB = False
-    COLAB = True
-except ImportError:
-    COLAB = False
+
+from base64 import b64decode
 import numpy as np
 import cv2
 from config import Config
@@ -29,7 +28,6 @@ def take_photo_js():
             div.appendChild(video);
             video.srcObject = stream;
             await video.play();
-            // Resize & capture
             google.colab.output.setIframeHeight(document.documentElement.scrollHeight, true);
             await new Promise((resolve) => setTimeout(resolve, 500));
             const canvas = document.createElement('canvas');
@@ -44,15 +42,17 @@ def take_photo_js():
     display(js)
     data = eval_js(f"takePhoto({Config.WEBCAM_QUALITY})")
     binary = b64decode(data.split(',')[1])
-    def get_local_webcam():
+    arr = np.frombuffer(binary, dtype=np.uint8)
+    frame = cv2.imdecode(arr, cv2.IMREAD_COLOR)
+    return frame
+
+
+def get_local_webcam():
     """Open webcam on local laptop / VS Code."""
     cap = cv2.VideoCapture(0)
     if not cap.isOpened():
         raise RuntimeError("Could not open webcam")
     return cap
-    arr = np.frombuffer(binary, dtype=np.uint8)
-    frame = cv2.imdecode(arr, cv2.IMREAD_COLOR)
-    return frame
 
 
 def resize_frame(frame):
