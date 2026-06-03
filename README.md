@@ -86,7 +86,7 @@ AURA_DRIVE/
 │   └── AURA_DRIVE_Colab.ipynb  # Full runnable Colab notebook
 │
 └── assets/
-    ├── screenshots/
+    ├── screenshots/ demo video 
     └── architecture.png
 ```
 
